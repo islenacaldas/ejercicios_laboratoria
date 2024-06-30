@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link rel="stylesheet" href="/login_netflix.css">
+</head>
+
+
+
+<body>
+<header>
+    <img src="./ZuuEqli - Imgur.png" alt="logo_netflix"> <img>
+</header>
+
+<section id="sign-in">
+    <div class="container">
+    <div class="formulario-1">
+        <form id="fomulario_netflix">
+            <h1>Sign in</h1>
+
+        <div class="datos">
+            <label for="email">E-mail or mobile number</label>
+            <input type="email" name="email" placeholder="islenacaldas@gmail.com" required>
+        </div>
+        <div class="datos">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="***********" required minlength=11 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        </div>
+
+            <button class="submit">Sign in</button>
+            <br>
+            <p class="center">OR</p>
+            <br>
+            <button class="boton-code">Use a Sign-in Code</button>
+            <br>
+            <p class="center">
+            <a href="https://www.netflix.com/co/LoginHelp" > Forgot password?</a>
+            </p>
+            <br>
+            <br>
+            <label class="checkbox-container">
+                <input type="checkbox" name="remember">
+                <span class="checkmark"></span>
+                Remember me
+            </label>
+            <br>
+            <p>New to Netflix? <a href="https://www.netflix.com/browse">Sign up now</a></p>
+            <br>
+            <p>This page is protected by  Google reCAPTCHA to ensure you're not a bot. <a class="decoration" href="https://Google.com">Learn more</a></p>
+        </form>
+    </div>
+</div>
+</section>
+</body>
+</html>

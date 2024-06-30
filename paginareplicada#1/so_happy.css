@@ -1,0 +1,142 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  background: #f8f9fa;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+#header {
+  position: sticky;
+  top: 0;
+  background-color: green;
+  padding: 1rem;
+  z-index: 1;
+  color: black;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#pepo {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  max-width: 1020px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.panel {
+  background-color: orange;
+  flex-basis: 30%;
+  padding: 1rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.content {
+  flex-basis: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.card figcaption {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.texto-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.parrafo {
+  flex-basis: 48%;
+  margin: 10px 0;
+}
+
+@media (max-width: 991px) {
+  body {
+    font-size: 18px;
+  }
+
+  #header {
+    justify-content: center;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .panel,.content, .parrafo {
+    flex-basis: 100%;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  .texto-card {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  .panel {
+    flex-basis: 30%;
+  }
+
+  .content {
+    flex-basis: 65%;
+  }
+}
