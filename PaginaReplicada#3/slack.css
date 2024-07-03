@@ -1,0 +1,99 @@
+
+body{
+background-color:#f4ede4;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+}
+header{
+padding: 0px 0;
+
+}
+header .container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+nav a{
+margin-right: 15%;
+margin-left: 15%;
+text-decoration: none;
+color: #000;
+}
+
+nav ul {
+ list-style-type: none;
+ padding: 0;
+ margin: 0;
+ display: flex;
+}
+
+nav a {
+ margin-right: 20px;
+ text-decoration: none;
+ color: #000;
+}
+.l-section, .r-section {
+ display: flex;
+ align-items: center;
+ 
+}
+.r-section button{
+margin-left: 0.5rem;
+padding: 10px 20px;
+} 
+.r-section .hamburger{
+display:none
+}
+
+button{
+background-color: #4a154b;
+color: white;
+padding: auto;
+border-radius:4px;
+font-family:Helvetica;
+padding: 10px 20px;
+font-size:12px;
+}
+.botoncito{
+background-color: #f4ede4;
+color: #4a154b;
+
+}
+.container1, .container2{
+max-width: 1440px;
+margin: 0 auto;
+display:flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.parrafo{
+font-size: 80px;
+}
+#hero{
+margin-top: 5%;
+}
+
+@media (max-width:991px){
+
+.l-section ul,
+.r-section button:not(.hamburger) {
+display: none;
+}
+.r-section .hamburger {
+display: block;
+padding: 2px;
+background-color: transparent;
+}
+
+.container2{
+flex-direction: column;
+align-items: center;
+font-size: 1.5rem;
+}
+.container2 button{
+flex-direction: column;
+
+}
+}
